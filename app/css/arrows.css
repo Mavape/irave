@@ -1,0 +1,8 @@
+.votes, .vote {
+ display:inline-block;
+}
+.vote {
+ vertical-align:middle;   
+}
+
+

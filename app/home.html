@@ -1,0 +1,30 @@
+<script src="js/lib/require.js"></script>
+
+<div class="container pane" style="background-image: url(img/bg.jpg); color: #ffffff;">
+    <p id="time"></p>
+    <p id="date"></p>
+</div>
+
+<script>
+    require(['jquery', 'datefmt'], function ($) {
+
+        $(document).ready(function() {
+
+            setTime();
+
+            function setTime() {
+                let now = new Date();
+
+                let fmt_hi = "HH:MM"; // 20:20
+                let fmt_lo = "ddd, dS mmm"; // Sat, 14 Apr
+
+                $("#time").html(now.format(fmt_hi));
+                $("#date").html(now.format(fmt_lo));
+            }
+
+            setInterval(setTime, 1000);
+        });
+
+    });
+</script>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iRave</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/iconic/font/css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/arrows.css">
+    <script data-main="js/main" src="js/lib/require.js"></script>
+	
+			
+</head>
+
+<body>
+<!-- Wrap your entire app inside .window -->
+<div class="container text-center" id="watch">
+    <!-- .toolbar-header sits at the top of your app -->
+    <h1>iRave</h1>
+	
+	<!-- the var click gotta be global so i can do the price at the end -->
+	<script type="text/javascript">
+    var fries_clicks = 0;
+    function onClick() {
+        fries_clicks += 1;
+        document.getElementById("fries_clicks").innerHTML = fries_clicks;
+    };
+    </script>
+	<script type="text/javascript">
+	function onClick11() {
+        if (fries_clicks > 0){
+		fries_clicks -= 1;
+		}
+        document.getElementById("fries_clicks").innerHTML = fries_clicks;
+    };
+    </script>
+    <a class="voteUp" onClick="onClick()"><img src="img/ii/Food_menus/up.jpg" width="7" height="14"></a>
+			<div>
+			<img src="img/ii/Food_menus/fries_option_large.jpg" width="20" height="30">
+			<a id="fries_clicks">0</a>
+			</div>
+			<a class="voteDown"onClick="onClick11()"><img src="img/ii/Food_menus/down.jpg" width="7" height="14"></button></a>
+	<div class="container">
+
+        <div id="content-area">
+            <!-- Content goes in here! -->
+
+			<script type="text/javascript">
+			var fries_clickss = 0;
+			function onClick21() {
+				fries_clickss += 1;
+				document.getElementById("fries_clickss").innerHTML = fries_clickss;
+			};
+			</script>
+			<script type="text/javascript">
+			function onClick22() {
+				if (fries_clickss > 0){
+				fries_clickss -= 1;
+			}
+			document.getElementById("fries_clickss").innerHTML = fries_clickss;
+		};	
+		</script> 
+			<a class="voteUp" onClick="onClick21()"><img src="img/ii/Food_menus/up.jpg" width="7" height="14"></a>
+			<div>
+			<img src="img/ii/Food_menus/fries_option_small.jpg" width="20" height="30">
+			<a id="fries_clickss">0</a>
+			</div>
+			<a class="voteDown"onClick="onClick22()"><img src="img/ii/Food_menus/down.jpg" width="7" height="14"></button></a>
+			<div>
+			<button onClick="window.location.href= 'comida.html' ">Confirmar</button>
+			</div>
+		
+
+
+</div>
+</body>
+</html>

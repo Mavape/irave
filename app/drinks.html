@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iRave</title>
+
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/iconic/font/css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/arrows.css">
+    <script data-main="js/main" src="js/lib/require.js"></script>
+	
+			
+</head>
+
+<body>
+<!-- Wrap your entire app inside .window -->
+<div class="container text-center" id="watch">
+    <!-- .toolbar-header sits at the top of your app -->
+    <h1>iRave</h1>
+	
+	<!-- the var click gotta be global so i can do the price at the end -->
+	<script type="text/javascript">
+    var drink_clicks = 0;
+    function onClick() {
+        drink_clicks += 1;
+        document.getElementById("drink_clicks").innerHTML = drink_clicks;
+    };
+    </script>
+	<script type="text/javascript">
+	function onClick11() {
+        if (drink_clicks > 0){
+		drink_clicks -= 1;
+		}
+        document.getElementById("drink_clicks").innerHTML = drink_clicks;
+    };
+    </script>
+    <a class="voteUp" onClick="onClick()"><img src="img/ii/Food_menus/up.jpg" width="7" height="14"></a>
+			<div>
+			<img src="img/ii/Food_menus/Drinks_option_cola.png" width="20" height="30">
+			<a id="drink_clicks">0</a>
+			</div>
+			<a class="voteDown"onClick="onClick11()"><img src="img/ii/Food_menus/down.jpg" width="7" height="14"></button></a>
+	<div class="container">
+
+        <div id="content-area">
+            <!-- Content goes in here! -->
+
+			<script type="text/javascript">
+			var drink_clickss = 0;
+			function onClick21() {
+				drink_clickss += 1;
+				document.getElementById("drink_clickss").innerHTML = drink_clickss;
+			};
+			</script>
+			<script type="text/javascript">
+			function onClick22() {
+				if (drink_clickss > 0){
+				drink_clickss -= 1;
+			}
+			document.getElementById("drink_clickss").innerHTML = drink_clickss;
+		};	
+		</script> 
+			<a class="voteUp" onClick="onClick21()"><img src="img/ii/Food_menus/up.jpg" width="7" height="14"></a>
+			<div>
+			<img src="img/ii/Food_menus/Drinks_option_water.png" width="20" height="30">
+			<a id="drink_clickss">0</a>
+			</div>
+			<a class="voteDown"onClick="onClick22()"><img src="img/ii/Food_menus/down.jpg" width="7" height="14"></button></a>
+			<div>
+			<button onClick="window.location.href= 'comida.html' ">Confirmar</button>
+			</div>
+		
+
+
+</div>
+</body>
+</html>
